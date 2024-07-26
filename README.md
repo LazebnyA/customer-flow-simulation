@@ -42,7 +42,7 @@ To generate the events “customer arrived at the queue” and “customer recei
 
 ### Methods and algorithms used for optimization.
 
-- To optimize the n number of coffee machines in order to minimize the average time a customer waits for his order (including the queue, of course) and the average time a machine waits for a customer (during idle time), the objective function will be minimized:
+- To optimize the n number of coffee machines in order to minimize the average time a customer waits for his order (including the queue, of course) and the average time a machine waits for a customer (during idle time), the objective function will be minimized: <br/>
     $$f(x(n))=αx_1(n) +βx_2(n)$$ </br>
     $$0 < n < n^\*$$ </br>
     $$n ∈ Z$$ </br>
