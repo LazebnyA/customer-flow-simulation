@@ -27,12 +27,12 @@ To generate the events “customer arrived at the queue” and “customer recei
 - A Poisson flow is a mathematical model of a random process where events occur independently of each other and with a constant average intensity in time or space. This process describes the number of events that occur during a certain time interval or in a certain area. A Poisson event stream is characterized by the fact that the number of events occurring in a fixed time interval has a **Poisson distribution with a lambda parameter**. The lambda parameter is the average number of events that occurred over a certain period of time. That is, the intensity of events.
 - The probability of occurrence of n events in a period of time t is:
 
-  - $$P(N(t) = n) = \frac{{e^{-\lambda t} \cdot (\lambda t)^n}}{{n!}}$$
+    $$P(N(t) = n) = \frac{{e^{-\lambda t} \cdot (\lambda t)^n}}{{n!}}$$
 
 
 - In such a stream, the time intervals between events are random variables with **exponential distribution** with the inverse parameter 1/λ corresponding to the stream.
     - The probability of one such interval is determined by the function of this distribution:
-        - $$P(X \leq x) = 1 - e^{-\lambda x}$$
+          $$P(X \leq x) = 1 - e^{-\lambda x}$$
 
     
 
