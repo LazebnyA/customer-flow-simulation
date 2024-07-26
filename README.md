@@ -32,7 +32,7 @@ To generate the events “customer arrived at the queue” and “customer recei
 
 - In such a stream, the time intervals between events are random variables with **exponential distribution** with the inverse parameter 1/λ corresponding to the stream.
     - The probability of one such interval is determined by the function of this distribution:
-          $$P(X \leq x) = 1 - e^{-\lambda x}$$
+    $$P(X \leq x) = 1 - e^{-\lambda x}$$
 
     
 
