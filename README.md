@@ -1,6 +1,6 @@
-# Modeling and optimization of serving customer flow on example of coffee vending machines in office complex
+# Modeling and optimization of serving customer flow using the example of coffee vending machines in an office complex
 
-#### *Remark. This project is not pretending on scientific research tool or something like that, it's just my personal studying project, that I've created to leverage my knowledge in Theory of Stochastic Processes and Optimization.
+#### *Remark: This project does not aim to be a scientific research tool or anything similar; it is simply a personal study project that I created to enhance my knowledge in the Theory of Stochastic Processes and Optimization.
 
 ## Quick briefing
 - Let's imagine a situation in which there is an “entrepreneur” who wants to equip a certain service area in an office complex with n number of coffee machines.
