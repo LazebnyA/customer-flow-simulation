@@ -43,10 +43,10 @@ To generate the events “customer arrived at the queue” and “customer recei
 ### Methods and algorithms used for optimization.
 
 - To optimize the n number of coffee machines in order to minimize the average time a customer waits for his order (including the queue, of course) and the average time a machine waits for a customer (during idle time), the objective function will be minimized:
-    - $$f(x(n))=αx_1(n) +βx_2(n)$$
-    - $$0<n<n*$$
-    - $$n ∈ Z$$
-    - $$n* ∈ Z$$
+    $$f(x(n))=αx_1(n) +βx_2(n)$$ </br>
+    $$0<n<n*$$ </br>
+    $$n ∈ Z$$ </br>
+    $$n* ∈ Z$$ </br>
     - where the weighting factor α denotes the importance of minimizing the average customer waiting time, and β denotes the average machine downtime. By default, they are equal to one, but the user can enter their own values of alpha and beta to obtain a suitable objective function.
 
 - In the software implementation, to obtain the optimal value of the parameter n in the range from 1 to n*, samples of 50 required metric values are sequentially built - the average customer waiting time and the average waiting time of machines (if there are several machines, the average value is taken) for $n=1, ..., n^*-1$. That is, we get 2 samples of 50 values at each iteration. The total number of such samples is $2(n^*-1)$. After that, the sample means of these samples are found, which correspond to the functions $x_1(n)$ and $x_2(n)$.
