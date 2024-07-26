@@ -49,7 +49,7 @@ To generate the events “customer arrived at the queue” and “customer recei
     $$n* ∈ Z$$ </br>
     - where the weighting factor α denotes the importance of minimizing the average customer waiting time, and β denotes the average machine downtime. By default, they are equal to one, but the user can enter their own values of alpha and beta to obtain a suitable objective function.
 
-- In the software implementation, to obtain the optimal value of the parameter n in the range from 1 to n*, samples of 50 required metric values are sequentially built - the average customer waiting time and the average waiting time of machines (if there are several machines, the average value is taken) for $$n=1, ..., n^*-1$$. That is, we get 2 samples of 50 values at each iteration. The total number of such samples is $$2(n^*-1)$$. After that, the sample means of these samples are found, which correspond to the functions $$x_1(n)$$ and $$x_2(n)$$.
+- In the software implementation, to obtain the optimal value of the parameter n in the range from 1 to n\*, samples of 50 required metric values are sequentially built - the average customer waiting time and the average waiting time of machines (if there are several machines, the average value is taken) for $$n=1, ..., n^\*-1$$. That is, we get 2 samples of 50 values at each iteration. The total number of such samples is $$2(n^\*-1)$$. After that, the sample means of these samples are found, which correspond to the functions $\x_1(n)$ and $\x_2(n)$.
   
 - Substituting these values into the objective function, we will find the value of n at which the function will be minimal using the minimum search algorithm.
   
